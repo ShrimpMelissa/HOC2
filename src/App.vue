@@ -11,12 +11,14 @@
 <script>
 import Header from './components/Header.vue'
 import Sidebar from './components/Sidebar.vue'
+import HomeView from './views/HomeView.vue'
 
 export default {
   name: 'App',
   components: {
     Sidebar,
     Header,
+    HomeView
   },
   data() {
     return {
@@ -30,9 +32,9 @@ export default {
   }
 }
 </script>
-
 <style>
 #app {
   display: flex;
 }
 </style>
+

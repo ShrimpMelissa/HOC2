@@ -24,12 +24,12 @@
 </template>
 
 <script>
-import DisclaimerInfo from '@/components/DisclaimerInfo.vue'
-import Equipment from '@/components/Equipment.vue'
-import Guides from '@/components/Guides.vue'
-import Heroes from '@/components/Heroes.vue'
-import Talisman from '@/components/Talisman.vue'
-import UpgradeRequirements from '@/components/UpgradeRequirements.vue'
+import DisclaimerInfo from '../components/DisclaimerInfo.vue'
+import Equipment from '../components/Equipment.vue'
+import Guides from '../components/Guides.vue'
+import Heroes from '../components/Heroes.vue'
+import Talisman from '../components/Talisman.vue'
+import UpgradeRequirements from '../components/UpgradeRequirements.vue'
 
 export default {
   name: 'HomeView',
