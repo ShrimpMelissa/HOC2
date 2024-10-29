@@ -34,29 +34,28 @@ export default {
     return {
       selectedImage: null,
       imageMap: {
-        'herostar.png': 'Upscaled-stars.png',
-        'potential.png': 'Upscaled-potential.png',
-        'transfer.png': 'Upscaled-transfer.png',
-        'upanishad.png': 'Upscaled-upanishad.png',
-        'rebirth.png': 'Upscaled-rebirth.png',
-        'divinity.png': 'Upscaled-crown.png',
-        'runestone.png': 'Upscaled-runestone.png',
-        'talisman.png': 'Upscaled-origin.png',
-        'spirits.png': 'Upscaled-spirit.png',
-        'starhubgear.png': 'Upscaled-starhub.png',
-        'treasure.png': 'Upscaled-treasure.png',
-        'pet.png': 'Upscaled-pet.png',
-        'codex.png': 'Upscaled-codex.png',
-        'energysource.png': 'Upscaled-source.png',
-        'artifact.png': 'Upscaled-artifact.png',
-        'goddessskin.png': 'Upscaled-goddess.png'
+        'herostar.png': 'herostar.png',
+        'potential.png': 'potential.png',
+        'transfer.png': 'transfer.png',
+        'upanishad.png': 'upanishad.png',
+        'rebirth.png': 'rebirth.png',
+        'divinity.png': 'divinity.png',
+        'runestone.png': 'runestone.png',
+        'talisman.png': 'talisman.png',
+        'spirits.png': 'spirits.png',
+        'starhubgear.png': 'starhubgear.png',
+        'treasure.png': 'treasure.png',
+        'pet.png': 'pet.png',
+        'codex.png': 'codex.png',
+        'energysource.png': 'energysource.png',
+        'artifact.png': 'artifact.png',
+        'goddessskin.png': 'goddessskin.png'
       }
     }
   },
   methods: {
     showUpgradeImage(imageName) {
-      const mappedImage = this.imageMap[imageName]
-      this.selectedImage = `/HOC2/Images/${mappedImage}`
+      this.selectedImage = `/HOC2/Images/${imageName}`
     },
     closeModal() {
       this.selectedImage = null
