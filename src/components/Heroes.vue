@@ -59,7 +59,7 @@ export default {
   },
   methods: {
     getImagePath(image) {
-      return `/HOC2/src/Images/${image}`
+      return `/HOC2/Images/${image}`
     },
     toggleDetails(heroId) {
       this.visibleHeroId = this.visibleHeroId === heroId ? null : heroId;
