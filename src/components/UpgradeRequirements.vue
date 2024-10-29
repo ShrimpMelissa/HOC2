@@ -65,12 +65,56 @@ export default {
 </script>
 
 <style scoped>
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.upgrade-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px;
+    width: 100%;
+    max-width: 800px;
+    justify-items: center;
+}
+
 .upgrade-buttons button {
-    width: 80px;
-    height: 80px;
-    margin: 5px;
+    width: 70px;
+    height: 70px;
+    margin: 0;
     background-size: cover;
     background-position: center;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.2s, border-color 0.2s;
+    cursor: pointer;
+}
+
+.upgrade-buttons button:hover {
+    transform: scale(1.1);
+    border-color: #ccc;
+}
+
+@media (min-width: 768px) {
+    .upgrade-buttons {
+        grid-template-columns: repeat(4, 80px);
+        gap: 20px;
+    }
+
+    .upgrade-buttons button {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 .modal-overlay {
