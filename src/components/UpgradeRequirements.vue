@@ -2,7 +2,7 @@
 <div id="upgrade-requirements" class="tab-content">
     <h2>Upgrade Requirements</h2>
     <div class="upgrade-buttons">
-        <button @click="showUpgradeImage('herostar.png')" :style="{ backgroundImage: `url(/HOC2/Images/Upscaled-stars.png)` }" data-text="Hero Star"></button>
+        <button @click="showUpgradeImage('herostar.png')" :style="{ backgroundImage: `url(/HOC2/Images/stars.png)` }" data-text="Hero Star"></button>
         <button @click="showUpgradeImage('potential.png')" :style="{ backgroundImage: `url(/HOC2/Images/Upscaled-potential.png)` }" data-text="Potential"></button>
         <button @click="showUpgradeImage('transfer.png')" :style="{ backgroundImage: `url(/HOC2/Images/Upscaled-transfer.png)` }" data-text="Transfer"></button>
         <button @click="showUpgradeImage('upanishad.png')" :style="{ backgroundImage: `url(/HOC2/Images/Upscaled-upanishad.png)` }" data-text="Upanishad"></button>
@@ -21,10 +21,7 @@
     </div>
 
     <div v-if="selectedImage" class="modal-overlay" @click="closeModal">
-        <div class="modal-content" @click.stop>
-            <img :src="selectedImage" alt="Upgrade Image" />
-            <button class="close-button" @click="closeModal">&times;</button>
-        </div>
+        <img :src="selectedImage" alt="Upgrade Image" class="modal-image" @click.stop />
     </div>
 </div>
 
@@ -35,12 +32,31 @@ export default {
   name: 'UpgradeRequirements',
   data() {
     return {
-      selectedImage: null
+      selectedImage: null,
+      imageMap: {
+        'herostar.png': 'Upscaled-stars.png',
+        'potential.png': 'Upscaled-potential.png',
+        'transfer.png': 'Upscaled-transfer.png',
+        'upanishad.png': 'Upscaled-upanishad.png',
+        'rebirth.png': 'Upscaled-rebirth.png',
+        'divinity.png': 'Upscaled-crown.png',
+        'runestone.png': 'Upscaled-runestone.png',
+        'talisman.png': 'Upscaled-origin.png',
+        'spirits.png': 'Upscaled-spirit.png',
+        'starhubgear.png': 'Upscaled-starhub.png',
+        'treasure.png': 'Upscaled-treasure.png',
+        'pet.png': 'Upscaled-pet.png',
+        'codex.png': 'Upscaled-codex.png',
+        'energysource.png': 'Upscaled-source.png',
+        'artifact.png': 'Upscaled-artifact.png',
+        'goddessskin.png': 'Upscaled-goddess.png'
+      }
     }
   },
   methods: {
     showUpgradeImage(imageName) {
-      this.selectedImage = `/HOC2/Images/upgrade/${imageName}`
+      const mappedImage = this.imageMap[imageName]
+      this.selectedImage = `/HOC2/Images/${mappedImage}`
     },
     closeModal() {
       this.selectedImage = null
@@ -67,25 +83,13 @@ export default {
     background-color: rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
-.modal-content {
-    position: relative;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    max-width: 80%;
-    max-height: 80%;
-    overflow: auto;
-}
-
-.close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    background: none;
-    border: none;
-    cursor: pointer;
+.modal-image {
+    max-width: 90%;
+    max-height: 90vh;
+    object-fit: contain;
 }
 </style>
