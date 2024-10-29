@@ -5,12 +5,12 @@
             <h2>Welcome.</h2>
             <div class="discord-icon">
                 <a href="https://discord.gg/GsxzAgdXjC" target="_blank" rel="noopener noreferrer">
-                    <img src="/HOC2/Images/discord.png" alt="Join our Discord" title="Join our Discord">
+                    <img src="/Images/discord.png" alt="Join our Discord" title="Join our Discord">
                 </a>
             </div>
         </div>
         <p>Click the button on top-left for quick access.</p>
-        <img src="/HOC2/Images/Chall.png" alt="Challenger" class="challenger-image">
+        <img src="/Images/Chall.png" alt="Challenger" class="challenger-image">
         <div class="button-container">
             <button @click="navigateTo('heroes')" class="welcome-button">Heroes</button>
             <button @click="navigateTo('upgrade')" class="welcome-button">Upgrade</button>
