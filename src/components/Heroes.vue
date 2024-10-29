@@ -40,10 +40,8 @@ import heroesData from '../assets/heroes.json';
 export default {
   name: 'Heroes',
   data() {
-    const images = import.meta.glob('../Images/*.{png,jpg,jpeg}', { eager: true, as: 'url' });
     return {
       heroes: heroesData,
-      images,
       visibleHeroId: null,
       searchQuery: '',
       selectedTier: '',
@@ -61,8 +59,7 @@ export default {
   },
   methods: {
     getImagePath(image) {
-      const imagePath = `../Images/${image}`;
-      return this.images[imagePath] || '';
+      return `/HOC2/src/Images/${image}`
     },
     toggleDetails(heroId) {
       this.visibleHeroId = this.visibleHeroId === heroId ? null : heroId;
