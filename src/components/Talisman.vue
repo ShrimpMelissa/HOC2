@@ -1,10 +1,10 @@
 <template>
 <div id="talisman" class="tab-content">
     <div class="talisman-images">
-        <img src="/HOC2/Images/SPC1.png" alt="SPC 1" class="talisman-image">
-        <img src="/HOC2/Images/SPC2.png" alt="SPC 2" class="talisman-image">
-        <img src="/HOC2/Images/SURV1.png" alt="SURV 1" class="talisman-image">
-        <img src="/HOC2/Images/SURV2.png" alt="SURV 2" class="talisman-image">
+        <img src="/Images/SPC1.png" alt="SPC 1" class="talisman-image">
+        <img src="/Images/SPC2.png" alt="SPC 2" class="talisman-image">
+        <img src="/Images/SURV1.png" alt="SURV 1" class="talisman-image">
+        <img src="/Images/SURV2.png" alt="SURV 2" class="talisman-image">
     </div>
 </div>
 </template>

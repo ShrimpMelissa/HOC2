@@ -35,6 +35,14 @@ export default {
 <style>
 #app {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 </style>
 
