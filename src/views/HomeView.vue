@@ -159,7 +159,7 @@ export default {
         }
 
         .challenger-image {
-            width: 50%;
+            width: 65%;
             margin: 10px 0;
         }
 
@@ -209,7 +209,7 @@ export default {
         }
 
         .challenger-image {
-            width: 45%;
+            width: 60%;
         }
 
         #welcome h2 {
