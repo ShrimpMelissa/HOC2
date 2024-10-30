@@ -2,7 +2,7 @@
   <div class="page-wrapper">
     <div class="disclaimer-container">
       <h2>Disclaimer</h2>
-      <p>The "Heroes of Crown Guide" site is an unofficial 
+      <p>The "Heroes of Crown:Legends Guide" site is an unofficial 
           resource made by dedicated community members of 
           the game 'Heroes of Crown: Legends', for free public viewing.
       </p>
@@ -34,19 +34,37 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 75vh;
-    max-width: 600px; /* Limit the size */
+    max-width: 600px;
     width: 100%;
-    margin: 0 auto; /* Center horizontally */
-    text-align: center; /* Center text */
-    padding: 0 20px; /* Add padding for better spacing */
+    text-align: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.1),
+        0 0 0 1px rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   .page-wrapper {
     display: flex;
-    justify-content: center; /* Center the container horizontally */
-    align-items: center; /* Center the container vertically */
-    width: 100vw; /* Full viewport width */
-    height: 100vh; /* Full viewport height */
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 100vw;
+    margin: 0;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 500px;
   }
 </style>
