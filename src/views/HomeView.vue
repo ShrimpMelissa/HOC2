@@ -54,9 +54,12 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 85vh;
-        width: 100vw;
+        min-height: calc(100vh - 60px);
+        width: 100%;
         margin: 0;
+        overflow: hidden;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     #welcome {
@@ -142,21 +145,22 @@ export default {
 
     @media (max-width: 600px) {
         .page-container {
-            height: 100vh;
-            padding: 20px;
-            box-sizing: border-box;
+            min-height: calc(100vh - 60px);
+            padding: 10px;
+            overflow: hidden;
         }
 
         #welcome {
-            padding: 20px;
-            margin: 0 15px;
+            padding: 15px;
+            margin: 0;
             height: auto;
-            justify-content: flex-start;
+            max-height: calc(100vh - 80px);
+            overflow-y: auto;
         }
 
         .challenger-image {
-            width: 60%; 
-            margin: 15px 0;
+            width: 50%;
+            margin: 10px 0;
         }
 
         #welcome .welcome-header {
@@ -176,16 +180,16 @@ export default {
         #welcome .button-container {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
+            gap: 8px;
             width: 100%;
             max-width: 300px;
-            margin: 15px auto 0;
+            margin: 10px auto 0;
         }
 
         .welcome-button {
-            width: 100%; 
+            width: 100%;
             font-size: 0.9em;
-            padding: 10px;
+            padding: 8px;
         }
 
         p {
@@ -196,12 +200,16 @@ export default {
 
     /* Add specific adjustments for very small screens */
     @media (max-width: 360px) {
+        .page-container {
+            padding: 5px;
+        }
+
         #welcome {
-            padding: 15px;
+            padding: 10px;
         }
 
         .challenger-image {
-            width: 70%;
+            width: 45%;
         }
 
         #welcome h2 {
