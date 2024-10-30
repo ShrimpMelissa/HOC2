@@ -58,7 +58,6 @@ export default {
         width: 100%;
         margin: 0;
         overflow: hidden;
-        padding: 20px;
         box-sizing: border-box;
     }
 
@@ -239,6 +238,14 @@ export default {
             width: 20px;
             height: 20px;
             margin-top: 1px;
+        }
+    }
+
+    /* Mobile-specific adjustments */
+    @media (max-width: 768px) {
+        .page-container {
+            align-items: flex-start;
+            padding-top: 60px;
         }
     }
 </style>
