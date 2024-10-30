@@ -84,19 +84,30 @@ export default {
         width: 50%;
         height: auto;
         margin: 20px 0;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
     }
 
     #welcome .welcome-header {
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 50px;
+        gap: 10px;
         margin-bottom: 10px;
     }
 
     #welcome .discord-icon {
-        width: 10%;
-        height: auto;
+        display: flex;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        margin-top: 2px;
+    }
+
+    #welcome .discord-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
     }
 
     .discord-icon {
@@ -159,8 +170,9 @@ export default {
         }
 
         .challenger-image {
-            width: 65%;
-            margin: 10px 0;
+            width: 70%;
+            margin: 8px 0;
+            aspect-ratio: 4 / 3;
         }
 
         #welcome .welcome-header {
@@ -174,7 +186,8 @@ export default {
         }
 
         #welcome .discord-icon {
-            width: 15%;
+            width: 24px;
+            height: 24px;
         }
 
         #welcome .button-container {
@@ -209,7 +222,8 @@ export default {
         }
 
         .challenger-image {
-            width: 60%;
+            width: 65%;
+            margin: 5px 0;
         }
 
         #welcome h2 {
@@ -219,6 +233,12 @@ export default {
         .welcome-button {
             width: 100%;
             font-size: 1em;
+        }
+
+        #welcome .discord-icon {
+            width: 20px;
+            height: 20px;
+            margin-top: 1px;
         }
     }
 </style>

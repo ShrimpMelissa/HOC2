@@ -9,7 +9,6 @@
       <li @click="handleItemClick('talisman')">Talisman</li>
       <li @click="handleItemClick('upgrade')">Upgrade Requirements</li>
     </ul>
-    <button @click="toggleTheme">Toggle Light/Dark Mode</button>
   </div>
 </template>
 
@@ -31,11 +30,6 @@ export default {
     },
     navigateTo(routeName) {
       this.$router.push({ name: routeName });
-    },
-    toggleTheme() {
-      const currentTheme = document.documentElement.getAttribute('data-theme');
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', newTheme);
     }
   }
 }

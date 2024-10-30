@@ -34,10 +34,10 @@ export default {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 600px;
+    max-width: 100%;
     width: 100%;
     text-align: center;
-    padding: 40px;
+    padding: 20px;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 20px;
@@ -45,6 +45,13 @@ export default {
         0 8px 32px rgba(0, 0, 0, 0.1),
         0 0 0 1px rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+  }
+
+  .disclaimer-text {
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .page-wrapper {
@@ -66,5 +73,17 @@ export default {
     line-height: 1.6;
     margin-bottom: 20px;
     max-width: 500px;
+  }
+
+  @media (max-width: 768px) {
+    .disclaimer-container {
+      padding: 15px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    .disclaimer-container {
+      padding: 10px;
+    }
   }
 </style>
