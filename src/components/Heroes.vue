@@ -278,9 +278,16 @@ li:last-child {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background: var(--details-bg);
     border-radius: 8px;
     margin-top: 8px;
+}
+
+.hero-details {
+    background-color: #FFFFFF;
+}
+
+[data-theme="dark"] .hero-details {
+    background-color: #2B2D31;
 }
 
 .description {
