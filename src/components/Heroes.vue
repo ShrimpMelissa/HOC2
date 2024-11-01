@@ -8,15 +8,15 @@
         </select>
       </div>
         <ul class="heroes-list">
-          <li v-for="hero in filteredHeroes" :key="hero.id" class="hero-item">
-            <div class="hero-header" @click="toggleDetails(hero.id)">
+          <li v-for="(hero, index) in filteredHeroes" :key="hero.id" class="hero-item">
+            <div class="hero-header" @click="expandedItems[index] = !expandedItems[index]">
               <img :src="getImagePath(hero.image)" alt="Hero Image" class="hero-image" />
               <div class="hero-info">
                 <h3>{{ hero.name }}</h3>
                 <p class="tier" :class="getTierClass(hero.tier)">Tier: {{ hero.tier }}</p>
               </div>
             </div>
-            <div v-if="visibleHeroId === hero.id" class="hero-details">
+            <div class="hero-details" v-show="expandedItems[index]">
                 <div class="description">
                     <h4 :style="{ color: getTierColor(hero.tier) }">Description</h4>
                     <p>{{ formatDescription(hero.description) }}</p>
@@ -75,6 +75,40 @@
                              class="rec-cell">{{ item }}</div>
                     </div>
                 </div>
+
+                <div class="power-chart" v-if="hero.powerGains">
+                  <h4 :style="{ color: getTierColor(hero.tier), textAlign: 'center' }">POWER GAIN (all 0 means not implemented):</h4>
+                  <div class="chart-wrapper">
+                    <div class="y-axis">
+                      <div class="y-label">5</div>
+                      <div class="y-label">4</div>
+                      <div class="y-label">3</div>
+                      <div class="y-label">2</div>
+                      <div class="y-label">1</div>
+                      <div class="y-label">0</div>
+                    </div>
+                    <div class="chart-container">
+                      <div class="grid-lines">
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                        <div class="grid-line"></div>
+                      </div>
+                      <div class="bars">
+                        <div class="bar-group" v-for="(value, key) in hero.powerGains" :key="key">
+                          <div class="bar" :style="{ height: `${value * 20}%` }"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="x-axis">
+                      <div class="x-label" v-for="(value, key) in hero.powerGains" :key="key">
+                        {{formatPowerLabel(key)}}
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
           </li>
       </ul>
@@ -89,7 +123,7 @@ export default {
   data() {
     return {
       heroes: heroesData,
-      visibleHeroId: null,
+      expandedItems: [],
       searchQuery: '',
       selectedTier: '',
     };
@@ -123,16 +157,9 @@ export default {
       });
     }
   },
-  watch: {
-    searchQuery() {},
-    selectedTier() {}
-  },
   methods: {
     getImagePath(image) {
       return `/HOC2/Images/${image}`
-    },
-    toggleDetails(heroId) {
-      this.visibleHeroId = this.visibleHeroId === heroId ? null : heroId;
     },
     formatDescription(description) {
       return description.replace(/<br>/g, '\n');
@@ -163,6 +190,19 @@ export default {
         'Food': '#795548'
       };
       return tierColors[tier] || '#FFFFFF';
+    },
+    formatPowerLabel(key) {
+      const labels = {
+        'star5': '5★',
+        'star10': 'potential',
+        'star11': '11★',
+        'star12': '12★',
+        'div1': 'Div 1',
+        'div5': 'Div 5',
+        'div7': 'Div 7',
+        'div9': 'Div 9'
+      };
+      return labels[key] || key;
     }
   }
 }
@@ -438,6 +478,109 @@ li:last-child {
 
 .rec-value {
     color: #FFD700;
+}
+
+.power-chart {
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.chart-wrapper {
+  position: relative;
+  padding-left: 40px;
+  padding-bottom: 40px;
+}
+
+.y-axis {
+  position: absolute;
+  left: 15px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.y-label {
+  font-size: 12px;
+  color: #333;
+}
+
+.chart-container {
+  height: 250px;
+  border: 1px solid #333;
+  background: white;
+  position: relative;
+  margin-left: 10px;
+}
+
+.grid-lines {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.grid-line {
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+}
+
+.bars {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 20px;
+}
+
+.bar-group {
+  flex: 0 1 auto;
+  display: flex;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.bar {
+  width: 20px;
+  background: #333;
+}
+
+.x-axis {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.x-label {
+  transform: rotate(-45deg);
+  transform-origin: center top;
+  font-size: 12px;
+  position: relative;
+  top: 0px;
+  width: 40px;
+  text-align: center;
+}
+
+.chart-note {
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+
+.power-chart h4 {
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
