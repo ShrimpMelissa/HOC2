@@ -187,14 +187,14 @@
       "SPD": "108"
     },
     "powerGains": {
-      "star5": 0,
-      "star10": 0,
-      "star11": 0,
-      "star12": 0,
-      "div1": 0,
-      "div5": 0,
-      "div7": 0,
-      "div9": 0
+      "star5": 4,
+      "star10": 3,
+      "star11": 4,
+      "star12": 5,
+      "div1": 1,
+      "div5": 3,
+      "div7": 1,
+      "div9": 3
     },
     "description": "Ghost lord is the healer from nimbus series. She can deal very heavy damage depending on how much life she has being a great option for pve and having more nimbus units makes her able to Stun targets as well as remove rage. She is an awesome healer for her ability to save an unit when taking fatal damage being really great for PvP fights.",
     "recommendedTalisman": [
