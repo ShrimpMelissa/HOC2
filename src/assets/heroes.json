@@ -276,14 +276,14 @@
       "SPD": "105"
     },
     "powerGains": {
-      "star5": 0,
-      "star10": 0,
+      "star5": 5,
+      "star10": 2,
       "star11": 0,
-      "star12": 0,
-      "div1": 0,
-      "div5": 0,
-      "div7": 0,
-      "div9": 0
+      "star12": 3,
+      "div1": 1,
+      "div5": 1,
+      "div7": 2,
+      "div9": 2
     },
     "description": "The multi attack queen support, mulan. The current strongest warrior unit in the game from nimbus series. She can restore life, gain massives amount of damage reduction, attack row with most enemies repeatedly. Her best qualities is the final damage reduction, front row tank/mid-back row damage support, dodge chance and ability to REMOVE RAGE from enemy units.",
     "recommendedTalisman": [
@@ -365,14 +365,14 @@
       "SPD": "108"
     },
     "powerGains": {
-      "star5": 0,
-      "star10": 0,
-      "star11": 0,
-      "star12": 0,
+      "star5": 4,
+      "star10": 3,
+      "star11": 3,
+      "star12": 3,
       "div1": 0,
-      "div5": 0,
+      "div5": 1,
       "div7": 0,
-      "div9": 0
+      "div9": 2
     },
     "description": "",
     "recommendedTalisman": [
@@ -410,13 +410,13 @@
       "SPD": "105"
     },
     "powerGains": {
-      "star5": 0,
-      "star10": 0,
-      "star11": 0,
-      "star12": 0,
+      "star5": 2,
+      "star10": 4,
+      "star11": 2,
+      "star12": 2,
       "div1": 0,
       "div5": 0,
-      "div7": 0,
+      "div7": 1,
       "div9": 0
     },
     "description": "Buddhist is good for his ability to tank and go immortal during combat, he can also debuff enemies to get damaged after hitting allies alongside with his innnate damage deflection and the ability to taunt enemy units making them only able to basic hit. His damage reduction bonus is also highly considerable.",
@@ -455,14 +455,14 @@
       "SPD": "108"
     },
     "powerGains": {
-      "star5": 0,
-      "star10": 0,
-      "star11": 0,
-      "star12": 0,
-      "div1": 0,
-      "div5": 0,
-      "div7": 0,
-      "div9": 0
+      "star5": 2,
+      "star10": 5,
+      "star11": 2,
+      "star12": 4,
+      "div1": 1,
+      "div5": 4,
+      "div7": 2,
+      "div9": 4
     },
     "description": "The lotus poet is a very strong support hero with powerful anti-resurrection effect.",
     "recommendedTalisman": [
@@ -500,14 +500,14 @@
       "SPD": "108"
     },
     "powerGains": {
-      "star5": 0,
-      "star10": 0,
-      "star11": 0,
-      "star12": 0,
-      "div1": 0,
-      "div5": 0,
-      "div7": 0,
-      "div9": 0
+      "star5": 2,
+      "star10": 5,
+      "star11": 4,
+      "star12": 3,
+      "div1": 1,
+      "div5": 1,
+      "div7": 2,
+      "div9": 5
     },
     "description": "Not much description to give. Heyday series assassin with pretty attacks.",
     "recommendedTalisman": [
@@ -543,16 +543,6 @@
       "HP": "2.54m",
       "SPD": "105"
     },
-    "powerGains": {
-      "star5": 0,
-      "star10": 0,
-      "star11": 0,
-      "star12": 0,
-      "div1": 0,
-      "div5": 0,
-      "div7": 0,
-      "div9": 0
-    },
     "description": "Second team unit. She is a tank that can absorb a lot of damage and has a wide variety of damage reduction.",
     "recommendedTalisman": [
       "Toughness",
@@ -587,16 +577,6 @@
       "DEF": "10511",
       "HP": "1.79m",
       "SPD": "108"
-    },
-    "powerGains": {
-      "star5": 0,
-      "star10": 0,
-      "star11": 0,
-      "star12": 0,
-      "div1": 0,
-      "div5": 0,
-      "div7": 0,
-      "div9": 0
     },
     "description": "The Twilight Priestess is a very unique healer that can go invisible and immortal. She starts with a attack debuff, can resurrect and heal plenty of life. She is a great healer for secondary PvP fights.",
     "recommendedTalisman": [
@@ -634,14 +614,14 @@
       "SPD": "118"
     },
     "powerGains": {
-      "star5": 0,
-      "star10": 0,
-      "star11": 0,
-      "star12": 0,
-      "div1": 0,
-      "div5": 0,
-      "div7": 0,
-      "div9": 0
+      "star5": 1,
+      "star10": 4,
+      "star11": 2,
+      "star12": 5,
+      "div1": 1,
+      "div5": 4,
+      "div7": 2,
+      "div9": 4
     },
     "description": "Celestial lux is a ranger that can spread a lot of debuff, specially fire one. She is specially speedy.",
     "recommendedTalisman": [
@@ -679,14 +659,14 @@
       "SPD": "108"
     },
     "powerGains": {
-      "star5": 0,
-      "star10": 0,
-      "star11": 0,
-      "star12": 0,
-      "div1": 0,
-      "div5": 0,
-      "div7": 0,
-      "div9": 0
+      "star5": 2,
+      "star10": 5,
+      "star11": 4,
+      "star12": 2,
+      "div1": 2,
+      "div5": 2,
+      "div7": 1,
+      "div9": 5
     },
     "description": "No comments for now.",
     "recommendedTalisman": [
@@ -724,14 +704,14 @@
       "SPD": "108"
     },
     "powerGains": {
-      "star5": 0,
-      "star10": 0,
-      "star11": 0,
-      "star12": 0,
-      "div1": 0,
-      "div5": 0,
-      "div7": 0,
-      "div9": 0
+      "star5": 4,
+      "star10": 1,
+      "star11": 5,
+      "star12": 3,
+      "div1": 2,
+      "div5": 5,
+      "div7": 1,
+      "div9": 3
     },
     "description": "No comments for now.",
     "recommendedTalisman": [
@@ -768,16 +748,6 @@
       "HP": "2.57m",
       "SPD": "105"
     },
-    "powerGains": {
-      "star5": 0,
-      "star10": 0,
-      "star11": 0,
-      "star12": 0,
-      "div1": 0,
-      "div5": 0,
-      "div7": 0,
-      "div9": 0
-    },
     "description": "No comments for now.",
     "recommendedTalisman": [
       "Toughness",
@@ -812,16 +782,6 @@
       "HP": "1.74m",
       "SPD": "108"
     },
-    "powerGains": {
-      "star5": 3,
-      "star10": 3,
-      "star11": 4,
-      "star12": 3,
-      "div1": 1,
-      "div5": 5,
-      "div7": 2,
-      "div9": 5
-    },
     "description": "No comments for now.",
     "recommendedTalisman": [
       "Don't invest",
@@ -854,16 +814,6 @@
       "DEF": "9961",
       "HP": "1.72m",
       "SPD": "110"
-    },
-    "powerGains": {
-      "star5": 0,
-      "star10": 0,
-      "star11": 0,
-      "star12": 0,
-      "div1": 0,
-      "div5": 0,
-      "div7": 0,
-      "div9": 0
     },
     "description": "Fallen Shura, the strongest chaos hero in the game with a wide variety of attacks, the only one worth investing of the chaos heroes.",
     "recommendedTalisman": [
@@ -898,16 +848,6 @@
       "HP": "1.75m",
       "SPD": "108"
     },
-    "powerGains": {
-      "star5": 0,
-      "star10": 0,
-      "star11": 0,
-      "star12": 0,
-      "div1": 0,
-      "div5": 0,
-      "div7": 0,
-      "div9": 0
-    },
     "description": "The sparkling wanderer is a very strong support hero with a wide variety of of debuffs and immunity effects.",
     "recommendedTalisman": [
       "Earthen",
@@ -940,16 +880,6 @@
       "DEF": "10128",
       "HP": "1.78m",
       "SPD": "108"
-    },
-    "powerGains": {
-      "star5": 0,
-      "star10": 0,
-      "star11": 0,
-      "star12": 0,
-      "div1": 0,
-      "div5": 0,
-      "div7": 0,
-      "div9": 0
     },
     "description": "No comments for now. Third team unit.",
     "recommendedTalisman": [
